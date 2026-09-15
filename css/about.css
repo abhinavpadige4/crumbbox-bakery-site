@@ -1,0 +1,50 @@
+.about {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background-color: var(--cream);
+}
+
+.about h2 {
+    text-align: center;
+    font-family: var(--font-primary);
+    margin-bottom: var(--spacing-lg);
+    color: var(--dark-brown);
+}
+
+.bakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.baker-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.baker-card:hover {
+    transform: translateY(-5px);
+}
+
+.baker-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.baker-card h3 {
+    font-family: var(--font-primary);
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+    color: var(--dark-brown);
+}
+
+.baker-card p {
+    font-family: var(--font-secondary);
+    color: #666;
+    margin: 0 var(--spacing-sm) var(--spacing-lg);
+}
