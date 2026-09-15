@@ -1,5 +1,7 @@
 @import '_variables.css';
 @import 'hero.css';
 @import 'menu.css';
-<parameter=file_path>
-css/main.css
+@import 'about.css';
+@import 'testimonials.css';
+@import 'form.css';
+@import 'responsive.css';
