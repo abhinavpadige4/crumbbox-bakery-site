@@ -1,0 +1,77 @@
+.order-contact {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background-color: var(--cream);
+}
+
+.order-contact h2 {
+    text-align: center;
+    font-family: var(--font-primary);
+    margin-bottom: var(--spacing-lg);
+    color: var(--dark-brown);
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+#contactForm label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-secondary);
+    color: var(--dark-brown);
+    font-weight: 500;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: var(--spacing-sm);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius-md);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: var(--brown);
+}
+
+#contactForm button {
+    background: var(--brown);
+    color: var(--cream);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: start;
+}
+
+#contactForm button:hover {
+    background: var(--dark-brown);
+    transform: translateY(-2px);
+}
+
+#formSuccess {
+    background: var(--accent);
+    color: var(--dark-brown);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    display: none;
+}
+
+#formSuccess.show {
+    display: block;
+}
